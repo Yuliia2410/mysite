@@ -39,3 +39,41 @@
 html, body{
 	max-width: 1440px;
 }
+
+.content{
+	position: absolute;
+	width: 552px;
+	height: 170px;
+	left: 150px;
+	top: 258px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 60px;
+	line-height: 85px;
+	color: #00194A;
+}
+
+.minitext{
+	position: absolute;
+	width: 537px;
+	height: 84px;
+	left: 150px;
+	top: 448px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	color: #00194A;
+	mix-blend-mode: normal;
+	opacity: 0.8;
+}
+
+.group6{
+	position: absolute;
+	width: 655px;
+	height: 604px;
+	left: 740px;
+	top: 145px;
+}
