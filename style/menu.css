@@ -2,13 +2,17 @@
 *::after,
 *::before{
 	box-sizing: border-box;
+
+	--pink: #FF0043;
+	/* хз чи то так норм але вроді прікольніше так зберігати колір який часто використовується */
 }
 
 body{
-	min-width: 1440px;
+	 min-width: 1440px; /*непотрібно */
+
 	font-family: 'Roboto', sans-serif;
 	color: #00194A;
-	mix-blend-mode: normal;
+	mix-blend-mode: normal; /* а для чого це? */
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 28px;
@@ -20,8 +24,11 @@ a{
 }
 
 .container{
-	max-width: 1440px;
-	margin-left: 150px;
+	/* треба трохи меншим шоб були відступи по боках */
+	max-width: 1200px;
+
+	margin: auto;
+	 /*margin: auto;* треба так шоб при будь якому розширенні воно було о центру*/
 }
 
 .header{
@@ -29,26 +36,32 @@ a{
 }
 
 .header__inner{
-	min-height: 100vh;
+	/* min-height: 100vh; нам не треба шоб хедер був на велечину всього першо екрана  */
 }
 
 .header__top{
 	display: flex;
 	justify-content: space-between;
+
 	padding: 50px 0 0;
+	/* padding-top: 50px;  так буде наглядніше написати */
+
 	font-weight: 700;
 }
 
 .header__link{
-	color: #FF0043;
+	color: var(--pink);
 	font-size: 20px;
 	line-height: 23px;
 }
 
 .header__btn{
-	margin-right: 150px;
+	 /* цього не потрібно */
+	/* margin-right: 150px; */
+
 	padding: 15px 20px 15px 21px;
-	background-color: #FF0043;
+	/* padding: 15px 20px; записи означають то саме */
+	background-color: var(--pink);
 	border-radius: 23px;
 	color: #FFFFFF;
 	font-size: 14px;
@@ -57,12 +70,21 @@ a{
 
 .header__content{
 	display: flex;
+
+	/* це для того шоб елементи були розтягнуті по краях */
+	justify-content: space-between; 
 }
 
 .header__text{
-	margin-top: 162px;
+
+	/* для того шоб гарно поставити по центру по висоті*/
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	/* margin-top: 162px; */
 	width: 552px;
-	height: 384px;
+	/* height: 384px; */
 }
 
 .header__title{
@@ -70,11 +92,14 @@ a{
 	font-size: 60px;
 	line-height: 85px;
 	margin: 0 0 0;
+	/* margin: 0;  нашо три рази писати 0?*/
 }
 
 .header__subtitle{
 	margin-top: 20px;
 	margin-right: 53px;
+	/* margin: 20px 53px 0 0; можна ше так записати але твій запис тоже норм */
+
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 28px;
@@ -84,8 +109,11 @@ a{
 	margin-top: 50px;	
 	width: 275px;
 	height: 60px;
+	
 	padding: 20px 50px 20px 50px;
-	background-color: #FF0043;
+	/* padding: 20px 50px; цього цілком хватає  */
+
+	background-color: var(--pink);
 	border-radius: 30px;
 	color: #FFFFFF;
 	font-size: 16px;
@@ -97,9 +125,16 @@ a{
 }
 
 .header__image-img{
-	width: 655px;
-	height: 604px;
-	margin-right: 45px;
+	width: 650px;
+	height: 600px;
+
+	/* але вроді воно не потрібне */
+	/* margin-right: 45px;
 	margin-left: 38px;
-	margin-top: 49px;
+	margin-top: 49px; */
+	/* margin: 49px 45px 0 38px;  ось так можна записати всьо в одну стрічку  */
+	/* і попробуй кругліші значення записувати */
+
+	/* для того шоб фотка випирала трохи справа */
+	margin-right: -150px;
 }
