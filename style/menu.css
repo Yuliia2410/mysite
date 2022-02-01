@@ -109,8 +109,17 @@ a{
 
 .section{
 	margin-top: 130px;
+}
+
+.items{
 	display: flex;
 	justify-content: center;
+}
+
+/* таким чином ми можемо доступатись ко конкретного дочірнього елемента цього класу */
+/* так як нам не треба шоб в третього був відступ справа бо цу спортить всю картину */
+.items .item:nth-child(3){
+	margin-right: 0px;
 }
 
 .item{
@@ -120,8 +129,10 @@ a{
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
+
+	
 	justify-content: space-between; 
-}
+}/* вродіби безсмислене */
 
 .item__icon{
 	width: 60px;
@@ -131,6 +142,8 @@ a{
 .item__text{
 	display: flex;
 	flex-direction: column;
+
+	/* вродіби безсмислене */
 	justify-content: space-between; 
 }
 
@@ -153,6 +166,8 @@ a{
 .item__direction{
 	margin-top: 20px;
 	display: flex;
+
+	/* тут треба )*/
 	justify-content: space-between;
 }
 
