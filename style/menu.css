@@ -196,19 +196,18 @@ a{
 
 }
 
-.rectangle{
-	position: absolute;
-    margin-left: -85px;
-    margin-top: -70px;
-    z-index: -1;
-}
-
-.rectangle__oval{
-	height: 249px;
-}
-
 .section-2__image{
 /* воно не повинно бути аполютне . то статична фотка відносно якої ми розставляємо крапочки і меседжі */
+}
+/* додав бефор */
+.section-2__image::before{
+	content: url('../img/Oval.svg');
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    margin-top: -75px;
+    margin-left: -90px;
+    z-index: -1;
 }
 
 .section-2__image-img{
