@@ -82,6 +82,7 @@ a{
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 28px;
+	opacity: 0.8;
 }
 
 .button{
@@ -113,6 +114,17 @@ a{
 	justify-content: center;
 }
 
+.items{
+	display: flex;
+	justify-content: center;
+}
+
+/* таким чином ми можемо доступатись ко конкретного дочірнього елемента цього класу */
+/* так як нам не треба шоб в третього був відступ справа бо цу спортить всю картину */
+.items .item:nth-child(3){
+	margin-right: 0px;
+}
+
 .item{
 	margin-right: 30px;
 	padding: 30px;
@@ -120,7 +132,6 @@ a{
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between; 
 }
 
 .item__icon{
@@ -131,7 +142,6 @@ a{
 .item__text{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between; 
 }
 
 .item__title{
@@ -167,4 +177,147 @@ a{
 .item__direction-icon{
 	width: 21px;
 	height: 20px;
+}
+
+.seclion-2{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80px;
+	margin-left: -114px;
+}
+
+.section-2__content{
+
+}
+
+.rectangle{
+	position: absolute;
+	margin-left: 36px;
+}
+
+.rectangle__oval{
+	height: 249px;
+}
+
+.section-2__image{
+	position: absolute;
+	margin-top: 80px;
+	margin-left: 135px;
+}
+
+.section-2__image-img{
+	height: 480px;
+}
+
+.section-2__messages{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+	margin-top: 360px;
+	margin-left: 261px;
+	height: 270px;
+}
+
+.message{
+	display: flex;
+	background: #FFFFFF;
+	border-radius: 10px;
+	width: 391px;
+	height: 80px;
+}
+
+.message__text{
+	display: flex;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.message__image-img{
+	margin: 10px 0px 10px 10px;
+	border-radius: 30px;
+	height: 60px;
+}
+
+.message__inner{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 19px 19px 19px 15px;
+}
+
+.message__info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: right;
+	margin: 15px 15px 15px 0px;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+
+}
+
+.message__title{
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+
+}
+
+.message__subtitle{
+	opacity: 0.8;
+}
+
+.message__time{
+
+}
+
+.message__count{
+	background: #FF0043;
+	border-radius: 8px;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 5px;
+	margin-left: 56px;
+}
+
+.section-2__text{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 162px;
+	width: 466px;
+}
+
+.section-2__title{
+	font-weight: 500;
+	font-size: 35px;
+	line-height: 50px;
+}
+
+.section-2__subtitle{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	opacity: 0.8;
+}
+
+.subtitle__paragraph{
+	margin-top: 30px;
+}
+
+.message__stairs{
+	margin-left: 30px;
+}
+
+.message__stairs-2x{
+	margin-left: 60px;
 }
