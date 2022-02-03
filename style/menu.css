@@ -6,7 +6,7 @@
 }
 
 html{
-	background: #F2F2F2;
+	background: #fff;
 }
 
 body{
@@ -187,8 +187,9 @@ a{
 .seclion-2{
 	display: flex;
 	justify-content: space-between;
-	margin-top: 80px;
-	margin-left: -114px;
+	margin-top: 125px;
+
+	/* нам не треба секцію пхати в ліво */
 }
 
 .section-2__content{
@@ -197,7 +198,9 @@ a{
 
 .rectangle{
 	position: absolute;
-	margin-left: 36px;
+    margin-left: -85px;
+    margin-top: -70px;
+    z-index: -1;
 }
 
 .rectangle__oval{
@@ -205,9 +208,7 @@ a{
 }
 
 .section-2__image{
-	position: absolute;
-	margin-top: 80px;
-	margin-left: 135px;
+/* воно не повинно бути аполютне . то статична фотка відносно якої ми розставляємо крапочки і меседжі */
 }
 
 .section-2__image-img{
@@ -216,12 +217,13 @@ a{
 
 .section-2__messages{
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	position: relative;
-	margin-top: 360px;
-	margin-left: 261px;
-	height: 270px;
+    flex-direction: column;
+    justify-content: space-between;
+	/* має бути абсолютне шоб ми могли поставити поверх тамтої фотки */
+    position: absolute;
+    margin-top: -218px;
+    margin-left: 148px;
+    height: 270px;
 }
 
 .message{
@@ -295,7 +297,7 @@ a{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	margin-top: 162px;
+	/* для чого він ф так прікольно по центру ставиться */
 	width: 466px;
 }
 
