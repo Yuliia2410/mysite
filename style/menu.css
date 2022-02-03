@@ -102,9 +102,9 @@ a{
 }
 
 .header__image-img{
-	width: 655px;
-	height: 604px;
-	margin-right: -100px;
+	width: 555px;
+	height: 504px;
+	/*margin-right: -100px;*/
 
 }
 
@@ -122,8 +122,6 @@ a{
 	justify-content: center;
 }
 
-/* таким чином ми можемо доступатись ко конкретного дочірнього елемента цього класу */
-/* так як нам не треба шоб в третього був відступ справа бо цу спортить всю картину */
 .items .item:nth-child(3){
 	margin-right: 0px;
 }
@@ -135,6 +133,7 @@ a{
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
 }
 
 .item__icon{
@@ -166,8 +165,6 @@ a{
 .item__direction{
 	margin-top: 20px;
 	display: flex;
-
-	/* тут треба )*/
 	justify-content: space-between;
 }
 
@@ -188,8 +185,6 @@ a{
 	display: flex;
 	justify-content: space-between;
 	margin-top: 125px;
-
-	/* нам не треба секцію пхати в ліво */
 }
 
 .section-2__content{
@@ -197,9 +192,9 @@ a{
 }
 
 .section-2__image{
-/* воно не повинно бути аполютне . то статична фотка відносно якої ми розставляємо крапочки і меседжі */
+
 }
-/* додав бефор */
+
 .section-2__image::before{
 	content: url('../img/Oval.svg');
     position: absolute;
@@ -218,10 +213,9 @@ a{
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
-	/* має бути абсолютне шоб ми могли поставити поверх тамтої фотки */
     position: absolute;
     margin-top: -218px;
-    margin-left: 148px;
+    margin-left: 128px;
     height: 270px;
 }
 
@@ -231,6 +225,7 @@ a{
 	border-radius: 10px;
 	width: 391px;
 	height: 80px;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
 }
 
 .message__text{
@@ -289,24 +284,23 @@ a{
 	text-align: center;
 	color: #FFFFFF;
 	padding: 5px;
-	margin-left: 56px;
+	margin-left: 36px;
 }
 
 .section-2__text{
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	/* для чого він ф так прікольно по центру ставиться */
 	width: 466px;
 }
 
-.section-2__title{
+.text__title{
 	font-weight: 500;
 	font-size: 35px;
 	line-height: 50px;
 }
 
-.section-2__subtitle{
+.text__subtitle{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
