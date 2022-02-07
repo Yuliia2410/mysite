@@ -104,8 +104,6 @@ a{
 .header__image-img{
 	width: 555px;
 	height: 504px;
-	/*margin-right: -100px;*/
-
 }
 
 .section{
@@ -122,8 +120,6 @@ a{
 	justify-content: center;
 }
 
-/* таким чином ми можемо доступатись ко конкретного дочірнього елемента цього класу */
-/* так як нам не треба шоб в третього був відступ справа бо цу спортить всю картину */
 .section__items .section__item:nth-child(3){
 	margin-right: 0px;
 }
@@ -167,8 +163,6 @@ a{
 .item__direction{
 	margin-top: 20px;
 	display: flex;
-
-	/* тут треба )*/
 	justify-content: space-between;
 }
 
@@ -190,8 +184,6 @@ a{
 	justify-content: space-between;
 	margin-top: 125px;
 	max-width: 1050px;
-
-	/* нам не треба секцію пхати в ліво */
 }
 
 .section-2__content{
@@ -199,9 +191,7 @@ a{
 }
 
 .section-2__image{
-/* воно не повинно бути аполютне . то статична фотка відносно якої ми розставляємо крапочки і меседжі */
 }
-/* додав бефор */
 .section-2__image::before{
 	content: url('../img/Oval.svg');
     position: absolute;
@@ -220,7 +210,6 @@ a{
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
-	/* має бути абсолютне шоб ми могли поставити поверх тамтої фотки */
     position: absolute;
     margin-top: -218px;
     margin-left: 128px;
