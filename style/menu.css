@@ -197,12 +197,12 @@ a{
     position: absolute;
     height: 250px;
     width: 250px;
-    margin-top: -75px;
-    margin-left: -90px;
+    margin-top: -85px;
+    margin-left: -110px;
     z-index: -1;
 }
 
-.section-2__image-img{
+.section__image-img{
 	height: 480px;
 }
 
@@ -370,4 +370,85 @@ margin-top: 150px;
 
 .section-3__items .content__item:nth-child(3){
 margin-top: -120px;
+}
+
+.section-4{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 200px;
+	max-width: 1058px;
+}
+
+.section-4__image::after{
+	content: url('../img/Oval.svg');
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    margin-top: -85px;
+    margin-left: -145px;
+    z-index: -1;
+}
+
+.section-4__image-circle{
+	position: absolute;
+	margin-top: -310px;
+
+}
+
+.section-4__image-circle-img{
+		margin-left: 100px;
+}
+
+.footer{
+	margin-top: 300px;
+}
+
+.footer__content{
+	background-color: currentColor;
+	border-radius: 25px;
+	padding: 50px 280px;
+	width: 1139px;
+	margin: auto;
+}
+
+.footer__text{
+	color: #FFFFFF;
+	text-align: center;
+    width: auto;
+
+}
+
+.footer__btn{
+	justify-content: center;
+	margin: auto;
+	margin-top: 50px;
+
+}
+
+.footer__contacts{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 80px;
+	font-weight: 500;
+
+
+}
+
+.contact__link{
+	font-size: 18px;
+	line-height: 21px;
+}
+
+.network__links{
+	display: flex;
+	width: 273px;
+	justify-content: space-between;
+	list-style-type: none;
+	font-size: 16px;
+	line-height: 19px;
+	margin: initial;
+}
+
+.network__link{
+
 }
